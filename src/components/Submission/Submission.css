@@ -1,0 +1,16 @@
+.sub-i {
+  margin-top: 0;
+  width: 27vw;
+}
+
+.submit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 35vh;
+}
+
+.submit-heading {
+  margin-bottom: -10px;
+}

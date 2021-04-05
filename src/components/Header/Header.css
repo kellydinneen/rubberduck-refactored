@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+  width: 100vw;
+  text-align: center;
+}
+
+.submissions-button,
+.home-button {
+  margin-top: 1vh;
+  border-radius: 50%;
+  background: #56B3F1;
+  font-family: Menlo;
+  font-weight: bolder;
+  border: solid black;
+  height: 50px;
+  cursor: pointer;
+}
+
+.submissions-button {
+  margin-left: 20px;
+}
+
+.site-title {
+  font-family: Menlo;
+  color: yellow;
+}

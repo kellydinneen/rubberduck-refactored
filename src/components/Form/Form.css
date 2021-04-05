@@ -1,0 +1,45 @@
+label {
+  font-family: monospace;
+  text-align: center;
+  margin-top: 10px;
+}
+
+input {
+  font-family: monospace;
+  margin-top: 10px;
+}
+
+textarea {
+  font-family: monospace;
+  margin-top: 10px;
+  height: 15vh;
+  width: 35vw;
+}
+
+select {
+  font-family: monospace;
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30vw;
+}
+
+.commentary {
+  font-family: Menlo;
+  font-size: 14px;
+}
+
+.submit-button,
+.penult-button,
+.forward-button,
+.back-button {
+  background: white;
+  color: blue;
+  font-family: monospace;
+  margin-top: 20px;
+}
