@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import Duck from '../Duck/Duck';
-import postStrategy from './post.js';
+import postStrategy from './post-idea';
 import './Submission.css';
 
 const Submission = () => {

@@ -1,5 +1,9 @@
 import React from 'react';
-import './ErrorPage.css'
+import './ErrorPage.css';
+
+type ErrorProps = {
+  message: string
+};
 
 const ErrorPage = (props) => {
   return(

@@ -5,7 +5,7 @@ import determinePrescriptionType from './formResponseProcessing';
 import Duck from '../Duck/Duck';
 import './Form.css';
 
-const Form = (props) => {
+const Form = () => {
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [incomplete, setIncomplete] = useState(true);
   const [userInputs, setUserInputs] = useState({});

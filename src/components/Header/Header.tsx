@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import './Header.css';
 
+type HeaderProps = {
+  home: boolean,
+  submit: boolean
+};
+
 const Header = (props) => {
   return (
     <header>
