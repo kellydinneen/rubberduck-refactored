@@ -1,0 +1,20 @@
+.prescription-card {
+  width: 30vw;
+  height: 40vh;
+  border: solid black;
+  border-radius: 15%;
+  font-family: monospace;
+  padding: 2vh;
+}
+
+.title {
+  color: blue;
+}
+
+.pres-button {
+  background: white;
+  color: blue;
+  font-family: monospace;
+  margin-top: 20px;
+  margin-right: 10px;
+}

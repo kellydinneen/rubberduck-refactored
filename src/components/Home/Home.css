@@ -1,0 +1,23 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.can-i-be-yours-div {
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  color: blue;
+}
+
+.yes-button {
+  background: white;
+  color: blue;
+  font-family: monospace;
+  cursor: pointer;
+}
