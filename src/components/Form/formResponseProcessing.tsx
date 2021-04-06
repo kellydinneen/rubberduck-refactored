@@ -38,9 +38,14 @@ const categorizeProblem = (inputs: any) => {
   }
 }
 
+type userType = {
+  energy: string;
+  valence: string;
+  relevantTraits: any;
+};
 
 const categorizeUser = (inputs: any) => {
-  let user: any;
+  let user: userType = {energy: '', valence: '', relevantTraits: ''};
   user.energy = determineUserEnergy(inputs);
   user.valence = determineUserValence(inputs);
   user.relevantTraits = inputs.selfDescription.filter((trait: string) => trait === 'over-cautious' || 'anxious' || 'obsessive' || 'imaginative')
