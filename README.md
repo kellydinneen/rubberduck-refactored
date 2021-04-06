@@ -12,7 +12,7 @@
 **Scott Ertmer** : [github profile](https://github.com/sertmer)
 
 ### Technologies
-**Build**: React, React Router, Express.js (for [unstuck API](https://github.com/kellydinneen/unstuck-api))
+**Build**: TypeScript, React, React Router, Express.js, Node.js (for [unstuck API](https://github.com/kellydinneen/unstuck-api))
 
 **Testing**: Cypress
 
