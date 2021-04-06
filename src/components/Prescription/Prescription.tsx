@@ -39,10 +39,7 @@ const Prescription = (props: PrescriptionProps) => {
     } else if (props.type === 'oblique' || props.type === 'science' || props.type === 'ideation') {
       endpoint = `https://unstuck-rubberduck-api.herokuapp.com/api/v1/thinking/${props.type}`
       source = 'unstuck'
-    } else if(props.type === 'affirmation') {
-      endpoint = 'https://www.affirmations.dev'
-      source = 'affirmation'
-    } else if(props.type === 'advice') {
+    } else {
       endpoint = `https://api.adviceslip.com/advice`
       source = 'advice'
     }
