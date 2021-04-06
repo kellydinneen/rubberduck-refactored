@@ -8,7 +8,7 @@ type HeaderProps = {
   submit: boolean
 };
 
-const Header = (props) => {
+const Header = (props: HeaderProps) => {
   return (
     <header>
       {props.home && <h1 className='site-title'>Rubberduck</h1>}

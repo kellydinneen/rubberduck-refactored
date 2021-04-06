@@ -9,17 +9,21 @@ type PrescriptionProps = {
   type: string;
 };
 
-const Prescription = (props) => {
-  const [prescription, setPrescription] = useState({});
+const Prescription = (props: PrescriptionProps) => {
+  const [prescription, setPrescription] = useState({title: '', content: '', resource: ''});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  const getPrescription = async (endpoint, source) => {
+  const getPrescription = async (endpoint: any, source: any) => {
     try {
       const promise = await fetchSolution(endpoint);
       const data = await promise.json();
       const processedData = cleanData(data, source)
-      setPrescription(processedData);
+      if (processedData.title === 'bad data') {
+        setError(true)
+      } else {
+        setPrescription(processedData);
+      }
       setLoading(false);
     } catch (err) {
       setError(err)
@@ -67,8 +71,5 @@ const Prescription = (props) => {
   )
 }
 
-Prescription.propTypes = {
-  type: PropTypes.string
-};
 
 export default Prescription;

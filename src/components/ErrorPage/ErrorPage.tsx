@@ -5,7 +5,7 @@ type ErrorProps = {
   message: string
 };
 
-const ErrorPage = (props) => {
+const ErrorPage = (props: ErrorProps) => {
   return(
     <p className="error-message">{props.message}</p>
   )

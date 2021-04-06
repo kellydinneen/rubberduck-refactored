@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import MultiSelect from "react-multi-select-component";
+import Select from "react-select";
 import determinePrescriptionType from './formResponseProcessing';
 import Duck from '../Duck/Duck';
 import './Form.css';
@@ -65,7 +65,11 @@ const Form = () => {
     }
   }
 
-  const selfDescriptorOptions = [
+type OptionType = {
+  label: string;
+  value: string;
+};
+const selfDescriptorOptions : OptionType[] =  [
     { label: "procrastinator", value: "procrastinator" },
     { label: "perfectionist", value: "perfectionist" },
     { label: "adventurous", value: "adventurous"},
@@ -205,12 +209,11 @@ const Form = () => {
         {currentQuestion === 9 && <>
           <label>
         How would you describe yourself?
-          <MultiSelect
+          <Select
+            closeMenuOnSelect={false}
+            isMulti
             options={selfDescriptorOptions}
-            value={selfDescription}
-            onChange={setSelfDescription}
-            labelledBy={"Select all that apply"}
-            className="multi"
+            defaultValue={selfDescriptorOptions[0]}
           />
         </label>
         <label>

@@ -1,4 +1,4 @@
-const postStrategy = (strategy) => {
+const postStrategy = (strategy: any) => {
   const post = {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
